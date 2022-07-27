@@ -1,0 +1,42 @@
+.Form {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+}
+
+.Form input {
+    top: 441px;
+    left: 870px;
+    width: 340px;
+    height: 30px;
+/* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+input[type=radio] {
+    width: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    height: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    opacity: 1;
+}
+
+#btnEnviar {
+    top: 670px;
+    left: 870px;
+    width: 340px;
+    height: 39px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 4px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
