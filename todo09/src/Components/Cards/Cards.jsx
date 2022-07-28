@@ -1,19 +1,17 @@
-import styles from './Cards.module.css'
-import Destaque from '../Destaque/Destaque'
+import styles from "./Cards.module.css"
+import React from 'react'
 
-const Cards = ({produto}) => {
+const Cards = ({p}) => {
   return(
-    <section className={S.container}>
-        <picture className={S.contentFoto}>
-          <img className={S.foto} />
-        </picture>
-        <Destaque text={produto.name}/>
-        <p>Descrição do produto um pouco maior</p>
-        <small>De: </small>
-        <Destaque text='Preço' />
-        <small>Ou: </small>
-        <Botao  text='Comprar' />
-    </section>
+    <div className={styles.Card}>
+      <img src={p.image} alt="" width="100%" height="150" />
+        <p>{p.name}</p>
+        <p>{p.description}</p>
+        <p>De: R${p.oldPrice}</p>
+        <p><b>Por: R${p.price}</b></p>
+        <p>Ou: {p.installments.count}x de {p.installments.value}</p>
+        <button>Comprar</button>
+    </div>
   )
 }
 

@@ -2,6 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: fit-content;
 }
 
 .Presentation h2 {
@@ -10,9 +11,8 @@
 .Left {
     display: flex;
     flex-direction: column;
+    max-width: 40%;
     margin-left: 10%;
-    width: 520px;
-    height: 220px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: small;

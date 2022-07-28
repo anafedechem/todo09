@@ -1,8 +1,11 @@
 import Form from "../Form/Form"
+import Products from "../Products/Products"
+import Share from "../Share/Share"
 import styles from "./Main.module.css"
 
 function Main() {
     return(
+    <div>
         <div className={styles.Presentation}>
             <div className={styles.Left}>
             <h2>Ajude o algorítimo a ser mais certeiro</h2>
@@ -23,10 +26,12 @@ function Main() {
             </div>
             
             <div className={styles.Right}>
-            <Form/>
-            </div>
-            
+                <Form/>
+            </div>            
         </div>
+        <Products/>
+        <Share/>
+    </div>
     )
 }
 
